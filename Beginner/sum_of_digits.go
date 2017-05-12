@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 
 /*
@@ -10,27 +11,27 @@ import "fmt"
 */
 
 func sumDigit(args int) (total int) {
-   n := args
-	
-   for n != 0 {
-      total += n % 10
-      n /= 10
-   }
-   return total
+	n := args
+
+	for n != 0 {
+		total += n % 10
+		n /= 10
+	}
+	return total
 }
 
 func exe(n int) {
-   var args int
-	
-   for index := 0; index < n; index++ {
-     fmt.Scan(&args)
-     fmt.Println(sumDigit(args))
-   }
+	var args int
+
+	for index := 0; index < n; index++ {
+		fmt.Scan(&args)
+		fmt.Println(sumDigit(args))
+	}
 }
 
 func main() {
-   var n int
+	var n int
 
-   fmt.Scan(&n)
-   exe(n)
+	fmt.Scan(&n)
+	exe(n)
 }
