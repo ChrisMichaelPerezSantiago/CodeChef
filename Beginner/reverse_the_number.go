@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
-	"strconv"
+   "fmt"
+   "strconv"
 )
 
 /*
@@ -14,22 +14,23 @@ import (
 */
 
 func reversingNumbers(str string) int {
-	var reverse string
-	var rev int
-	for _, elements := range str {
-		reverse = string(elements) + reverse
-		rev, _ = strconv.Atoi(reverse)
-	}
-	return rev
+   var reverse string
+   var rev int
+
+   for _, elements := range str {
+       reverse = string(elements) + reverse
+       rev, _ = strconv.Atoi(reverse)
+   }
+   return rev
 }
 
 func main() {
-	var n int
-	var str string
+   var n int
+   var str string
 
-	fmt.Scan(&n)
-	for index := 0; index < n; index++ {
-		fmt.Scan(&str)
-		fmt.Println(reversingNumbers(str))
-	}
+   fmt.Scan(&n)
+   for index := 0; index < n; index++ {
+      fmt.Scan(&str)
+      fmt.Println(reversingNumbers(str))
+    }
 }
