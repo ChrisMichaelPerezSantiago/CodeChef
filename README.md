@@ -1,5 +1,8 @@
 # CodeChef
 
+**Beginner**
+**Execution Time **
+
 **Author**
 -----------------
 Development Lead
