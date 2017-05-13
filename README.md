@@ -2,8 +2,9 @@
 
 **Beginner**
 -----------------
-Languages| Technologies
--------- | ------------
+
+Problems | Execution Time
+-------- | --------------
 Java     | Swing
 Python   | pyfst
 C++      | OpenFst
