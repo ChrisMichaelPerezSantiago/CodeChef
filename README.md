@@ -2,7 +2,13 @@
 
 **Beginner**
 -----------------
-**Execution Time **
+Languages| Technologies
+-------- | ------------
+Java     | Swing
+Python   | pyfst
+C++      | OpenFst
+
+
 
 **Author**
 -----------------
