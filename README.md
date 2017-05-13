@@ -1,6 +1,7 @@
 # CodeChef
 
 **Beginner**
+-----------------
 **Execution Time **
 
 **Author**
