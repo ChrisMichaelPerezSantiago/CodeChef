@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/big"
+	"time"
 )
 
 /*
@@ -26,6 +27,8 @@ func factorial(args int64) *big.Int {
 }
 
 func main() {
+	start := time.Now()
+
 	var n int
 	var args int64
 
@@ -34,4 +37,6 @@ func main() {
 		fmt.Scan(&args)
 		fmt.Println(factorial(args))
 	}
+	elapsed := time.Since(start)
+	fmt.Println(elapsed)
 }

@@ -6,11 +6,12 @@ import (
 	"os"
 	"sort"
 	"strconv"
+	"time"
 )
 
 /*
    Problem: Turbo Sort
-   Problem Code: Problem Code: TSORT
+   Problem Code: TSORT
 
    @Author:  Chris M. Perez
    @Date:    5/13/2017
@@ -25,6 +26,8 @@ func sorting(args []int) {
 }
 
 func main() {
+	start := time.Now()
+
 	console := bufio.NewScanner(os.Stdin)
 	var n int
 
@@ -38,4 +41,7 @@ func main() {
 		}
 	}
 	sorting(input)
+
+	elapsed := time.Since(start)
+	fmt.Println(elapsed)
 }

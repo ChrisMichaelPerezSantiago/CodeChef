@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 /*
    Problem: Sum of Digits
@@ -11,27 +14,32 @@ import "fmt"
 */
 
 func sumDigit(args int) (total int) {
-   n := args
+	n := args
 
-   for n != 0 {
-      total += n % 10
-      n /= 10
-   }
-   return total
+	for n != 0 {
+		total += n % 10
+		n /= 10
+	}
+	return total
 }
 
 func exe(n int) {
-   var args int
+	var args int
 
-   for index := 0; index < n; index++ {
-      fmt.Scan(&args)
-      fmt.Println(sumDigit(args))
-   }
+	for index := 0; index < n; index++ {
+		fmt.Scan(&args)
+		fmt.Println(sumDigit(args))
+	}
 }
 
 func main() {
-   var n int
+	start := time.Now()
 
-   fmt.Scan(&n)
-   exe(n)
+	var n int
+
+	fmt.Scan(&n)
+	exe(n)
+
+	elapsed := time.Since(start)
+	fmt.Println(elapsed)
 }

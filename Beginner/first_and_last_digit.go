@@ -1,32 +1,39 @@
 package main
+
 import (
-   "fmt"
-   "strconv"
+	"fmt"
+	"strconv"
+	"time"
 )
 
 /*
-    Problem: First and Last Digit
-    Problem Code: FLOW004
+   Problem: First and Last Digit
+   Problem Code: FLOW004
 
-    @Author:  Chris M. Perez
-    @Date:    5/12/2017
+   @Author:  Chris M. Perez
+   @Date:    5/12/2017
 */
 
 func sum(str string) (total int) {
-   start, _ := strconv.Atoi(string([]rune(str)[0]))
-   last, _ := strconv.Atoi(string([]rune(str)[len(str)-1]))
+	start, _ := strconv.Atoi(string([]rune(str)[0]))
+	last, _ := strconv.Atoi(string([]rune(str)[len(str)-1]))
 
-   total = start + last
-   return total
+	total = start + last
+	return total
 }
 
 func main() {
-   var n int
-   var str string
-  
-   fmt.Scan(&n)
-   for index := 0; index < n; index++ {
-      fmt.Scan(&str)
-      fmt.Println(sum(str))
-   }
+	start := time.Now()
+
+	var n int
+	var str string
+
+	fmt.Scan(&n)
+	for index := 0; index < n; index++ {
+		fmt.Scan(&str)
+		fmt.Println(sum(str))
+	}
+
+	elapsed := time.Since(start)
+	fmt.Println(elapsed)
 }
