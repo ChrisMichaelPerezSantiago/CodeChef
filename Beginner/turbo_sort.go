@@ -10,7 +10,7 @@ import (
 
 /*
    Problem: Turbo Sort
-   Problem Code: Problem Code: TSORT
+   Problem Code: TSORT
 
    @Author:  Chris M. Perez
    @Date:    5/13/2017
