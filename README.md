@@ -5,7 +5,7 @@
 
 Problems | Execution Time
 -------- | --------------
-first_and_last_digit.go     | 1.670404s
+[first_and_last_digit.go](https://github.com/ChrisMichaelPerezSantiago/CodeChef/blob/master/Beginner/first_and_last_digit.go)     | 1.670404s
 reverse_the_number.go       | 1.6805897s
 small_factorial.go          | 1.7832171s
 small_factorials.go         | 1.595619s
